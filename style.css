@@ -138,3 +138,33 @@ select option {
   background-color: #2e2e2e;
   color: #f5f0e8;
 }
+
+@media (max-width: 640px) {
+  nav {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  section {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  footer {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .reservation-grid {
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
