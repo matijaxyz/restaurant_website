@@ -1,0 +1,140 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.animate-fade-up-fast {
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+
+.scroll-animate {
+  opacity: 0;
+}
+
+.menu-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(200, 118, 42, 0.1);
+}
+
+.menu-item:first-child {
+  border-top: 1px solid rgba(200, 118, 42, 0.1);
+}
+
+.tab-btn {
+  color: rgba(245, 240, 232, 0.733);
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(200, 118, 42, 0.15);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.tab-btn:hover::before {
+  transform: scaleX(1);
+}
+
+.tab-btn:hover {
+  color: rgb(241, 240, 239);
+}
+
+.active-tab {
+  color: #c8762a !important;
+  background: rgba(200, 118, 42, 0.15);
+}
+
+.active-tab::before {
+  transform: scaleX(1) !important;
+}
+
+.main-btn,
+.main-btn-2 {
+  position: relative;
+  overflow: hidden;
+  color: rgba(245, 240, 232, 0.733);
+  background: transparent;
+}
+
+.main-btn:hover,
+.main-btn-2:hover {
+  color: rgb(241, 240, 239);
+}
+
+.main-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(200, 118, 42, 0.15);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.main-btn-2::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(228, 222, 216, 0.15);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.main-btn:hover::before,
+.main-btn-2:hover::before {
+  transform: scaleX(1);
+}
+
+.reserve-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.reserve-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(200, 118, 42, 0.25);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.reserve-btn:hover::before {
+  transform: scaleX(1);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) opacity(0.4);
+}
+
+select option {
+  background-color: #2e2e2e;
+  color: #f5f0e8;
+}
